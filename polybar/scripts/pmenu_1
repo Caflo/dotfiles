@@ -1,0 +1,10 @@
+#!/bin/bash
+
+## Created By Aditya Shakya
+
+MENU="$(rofi -sep "|" -dmenu -i -p 'System' -location 3 -yoffset 60 -xoffset -28 -width 25 -hide-scrollbar -line-padding 7 -padding 20 -lines 7 -font "Fantasque Sans Mono 10" <<< "Logout | Reboot | Shutdown")"
+            case "$MENU" in
+                *Logout) pkill -u $USER;;
+                *Reboot) reboot ;;
+                *Shutdown)  poweroff
+            esac

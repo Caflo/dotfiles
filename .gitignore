@@ -1,0 +1,10 @@
+# Ignore #
+
+.user-dirs.dirs
+.user-dirs.locale
+
+**/google-chrome
+**/spotify
+**/io.krunker.desktop
+
+*.log
